@@ -1,0 +1,149 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Yu Mincho', sans-serif;/*フォント*/
+    background: #333333;/*背景色*/
+    color: white;/*文字色*/
+    margin: 0;/*余白*/list-style: none; とは    padding: 10px 50px;/*余白*/
+    padding: 0;/*余白*/
+}
+
+
+/* ヘッダー */
+header {
+    background: #222222;/*背景色*/
+    display: -webkit-flex;/*配置*/
+    display: flex;/*配置*/
+    border-bottom:1px solid yellow;/*アンダー黄色*/
+    justify-content: space-between;/*リンクの３点を左寄せ？*/
+    align-items: center;/*文字を中央寄せ*/
+    padding: 10px 50px;/*余白　一つ目は上下、二つ目は左右*/
+}
+
+header h1 {
+    margin: 0;/*ヘッダー部分の隙間を無くす*/
+}
+
+nav ul {
+    /* ulの位置調整？？ */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    /* ３つの項目を縦から横配列に */
+    display: inline;/* 縦並びを横並びにする */
+    margin: 0 30px;/* 文字間隔調整 */
+}
+
+nav ul li a {
+    /* リンクの色を青から白に */
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+}
+
+
+/* セクション共通 */
+section {
+    padding: 50px 20px;
+}
+
+/* 各項目の題名設定 */
+.daimei {
+    font-size:40px;
+    text-align: center;
+    text-decoration: underline yellow;
+    text-decoration-thickness: 1px;
+}
+
+
+/* 上　プロフィール部全体設定 */
+#profile {
+ margin:0 auto;/* 中央寄せ */
+ width: 90%;
+ height: 90%;
+ display: flex;/* これで写真と文章左右にできる */
+ justify-content: center;/* これで写真と文章左右にできる */
+ padding: 0px 0px;/*余白　一つ目は上下、二つ目は左右*/
+}
+/*プロフィール部 写真*/
+#syasin {
+ padding-top: 100px;/*上の間隔軽く開ける*/
+}
+#syasin img {
+  border: solid 1px #777777; 
+  padding: 5px;
+}
+
+/*プロフィール部 経歴*/
+#keireki {
+ padding: 20px;/* 余白指定 */
+}
+#keireki h2 {
+    margin: 0 auto;/* 図形を中央寄せ */
+    text-align: center;/* テキストを中央寄せ */
+    width: 90%;
+    background: black;/*背景色*/
+    border:1px solid #777777;
+}
+
+
+/* Skill欄のサブタイトルレイアウト */
+.subdaimei {
+    margin: 0 auto;/* 図形を中央寄せ */
+    text-align: center;/* テキストを中央寄せ */
+    width: 40%;
+    background: black;/*背景色*/
+    border:1px solid #777777;
+}
+
+/* Skill欄のテーブル加工 */
+#skill {
+/* 参考 https://qiita.com/tatsukikane/items/819e742103cdc13e08a7 */
+display: flex;
+justify-content: space-around;
+}
+.skilltr {
+    font-size:30px;
+}
+.skilltr th{
+    text-decoration: underline white;
+    text-decoration-thickness: 1px;
+}
+.skilltable td {
+    text-align: center;
+}
+
+
+
+/* お問い合わせ（contact）欄 */
+form {
+    display: flex;/*適度に間隔をあける*/
+    flex-direction: column;/*回答欄縦に*/
+    gap: 10px;/*適度に間隔をあける*/
+    width: 300px;/*フォーム横の長さ*/
+    margin: 0 auto;
+}
+#contact p{
+    text-align: center;/* テキストを中央寄せ */
+} 
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;/*丸みを出す*/
+}
+button {
+    background: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* フッター */
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+}
