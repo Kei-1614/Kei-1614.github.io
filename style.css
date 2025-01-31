@@ -14,7 +14,7 @@ header {
     display: -webkit-flex;/*配置*/
     display: flex;/*配置*/
     border-bottom:1px solid yellow;/*アンダー黄色*/
-    justify-content: space-between;/*リンクの３点を左寄せ？*/
+    justify-content: space-between;
     align-items: center;/*文字を中央寄せ*/
     padding: 10px 50px;/*余白　一つ目は上下、二つ目は左右*/
 }
@@ -24,7 +24,6 @@ header h1 {
 }
 
 nav ul {
-    /* ulの位置調整？？ */
     list-style: none;
     padding: 0;
 }
@@ -99,7 +98,6 @@ section {
 
 /* Skill欄のテーブル加工 */
 #skill {
-/* 参考 https://qiita.com/tatsukikane/items/819e742103cdc13e08a7 */
 display: flex;
 justify-content: space-around;
 }
