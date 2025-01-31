@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+   <title>Keigo Aoyama</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+
+   <!-- ヘッダー -->
+   <header>
+    <h1>Keigo Aoyama</h1>
+        <nav>
+<!--hrefあとでやる -->
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+   </header>
+
+
+   <!-- プロフィールタイトル -->
+     <h1 class="daimei">Profile</h1><!-- タイトル的な奴はdaimeiクラスを設定 -->
+   <!-- プロフィール中身 -->
+   <section id="profile">
+     <div id="syasin">
+      <!-- 写真 -->
+      <img src="kei.jpeg" width="350px" height="350px" alt="kei">
+     </div>
+
+     <div id="keireki">
+      <h2>青山 慧冴</h2>
+      <h3>【経歴】</h3>
+      <ul>
+       <li>2017年3月：群馬県立館林商工高等学校 情報ビジネス科 卒業</li>
+       <li>2018年4月：卸売業の事務職に正社員として入社</li>
+       <li>2019年3月：退社</li>
+       <li>2018年4月：東京IT会計法律専門学校大宮校 ITビジネス学科 入学</li>
+       <li>2020年3月：卒業</li>
+       <li>2020年4月：メーカー企業の情報システム部門に正社員として入社</li>
+       <li>2023年12月：退社</li>
+       <li>2024年4月：東京通信大学 情報マネジメント学部 3年次編入</li>
+       <li>2026年3月：卒業予定</li>
+      </ul>
+      <p></p>
+      <h3>【保有資格】</h3>
+      <ul>
+       <li>基本情報技術者試験</li>
+       <li>応用情報技術者試験</li>
+       <li>普通自動車第1種運転免許</li>
+       <li>全商簿記実務検定1級</li>
+       <li>日本商工会議所簿記検定試験3級</li>
+      </ul>
+     </div>
+
+   </section>
+
+
+   <!-- スキルタイトル -->
+     <h1 class="daimei">Skill</h1><!-- タイトル的な奴はdaimeiクラスを設定 -->
+   <!-- スキルサブタイトル -->
+     <h2 class="subdaimei">扱える言語/経験業務</h2>
+   <!-- スキル中身 -->
+   <section id="skill">
+
+   <table class="skilltable">
+
+     <!-- 1行目 -->
+     <tr class="skilltr">
+       <!-- スキルテーブルタイトル -->
+       <th>ExcelVBA</th> <th>Pyhon/Java</th> <th>HTML/CSS</th>
+     </tr>
+
+     <tr>
+      <td>
+          <p><img src="excel.png" width="100px" height="100px" alt="excel"></p>
+          転記作業の自動化、データ集計・分析、ファイル管理（分割や集約）、入力作業の制御　等の処理が可能
+      </td>
+
+      <td>
+          <p><img src="python.png" width="100px" height="100px" alt="excel"></p>
+          基本的な処理（反復処理・分岐処理・四則演算 など）とオブジェクト指向を用いたプログラミングが可能
+      </td>
+
+      <td>
+          <p><img src="html.png" width="100px" height="100px" alt="excel"></p>
+          当webページのようなHTMLとCSSを組み合わせたコーディングスキルを習得中
+      </td>
+     </tr>
+
+
+     <!-- 2行目 -->
+     <tr class="skilltr">
+       <!-- スキルテーブルタイトル -->
+       <th>ツール導入経験</th> <th>システム監査対応</th> <th>ID管理</th>
+     </tr>
+
+     <tr>
+      <td>
+          <p><img src="tool.png" width="100px" height="100px" alt="excel"></p>
+          Kintoneを特定部署へ導入。企画立案から導入支援まで一貫して対応し、業務効率化を推進。
+      </td>
+
+      <td>
+          <p><img src="kansa.png" width="100px" height="100px" alt="excel"></p>
+          特権IDの管理・付与プロセスの整備、ID棚卸の実施、アクセスログ監査の自動化を推進。
+      </td>
+
+      <td>
+          <p><img src="ID.png" width="100px" height="100px" alt="excel"></p>
+          Active Directoryのユーザー管理、ファイルサーバーのアクセス権管理、基幹システムのID管理に対応。
+      </td>
+     </tr>
+   </table>
+
+   </section>
+
+
+
+   <!-- お問い合わせ -->
+     <h1 class="daimei">Contact</h1><!-- タイトル的な奴はdaimeiクラスを設定 -->
+   <!-- スキル中身 -->
+   <section id="contact">
+    <p>ご連絡は以下のフォームまたはメールでお願いします。</p>
+    <form>
+     <input type="text" placeholder="お名前" required>
+     <input type="email" placeholder="メールアドレス" required>
+     <textarea placeholder="メッセージ" required></textarea>
+     <button type="submit">送信</button>
+    </form>
+   </section>
+
+
+
+   <!-- フッター -->
+    <footer>
+     <p>&copy; 2025 青山 慧冴</p>
+    </footer>
+
+ </body>
+
+</html>
